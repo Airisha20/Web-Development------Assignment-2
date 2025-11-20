@@ -1,0 +1,3 @@
+Hello, welcome to python class
+BCA Class
+date = 12-11-2025
