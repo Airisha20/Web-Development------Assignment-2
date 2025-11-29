@@ -3,44 +3,276 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Template clone</title>
-    <link rel="icon" type="image/png" href="Images\Html.png">
+    <title>Assignment 2 -- e-book landing page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="shapes-container">
-        <div class="shape shape-circle"></div>
-        <div class="shape shape-triangle"></div>
-        <div class="shape shape-square"></div>
-    </div>
-    <nav id="navbar" class="scrolled">
-        <div class="nav-container">
-            <a href="index.html" class="logo-link">
-                <img src="Images\A.jpg" width="5%" height="5%">
-                <span class="logo-text">Airisha's</span>
+    <div class="sticky-navbar">
+        <nav class="navbar">
+            <a class="navbar-brand-name" href="index.html">
+                <span>Airisha's</span>
+                <i class="navbar-brand-icon"></i>
             </a>
-            <ul class="nav-links" id="navLinks">
-                <li>
-                    <a href="#home" class="nav-link active">
-                        "Home"
-                    </a>
-                </li>
-                <li>
-                    <a href="#features" class="nav-link">
-                        "Features"
-                    </a>
-                </li>
-                <li>
-                    <a href="#about" class="nav-link">
-                        "About"
-                    </a>
-                </li>
-                <li>
-                    <a href="#contact" class="nav-link">
-                        "Contact"
-                    </a>
-                </li>
-            </ul>
+            <div class="Navbar-right">
+                <ul class="navbar-items">
+                    <li class="nav-item">
+                        <a class="nav-link click-scrolla active" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll active" href="#wdyn-section">Content</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll active" href="#Founder">Founder</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll active" href="#Reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll active" href="#Contact">Contact</a>
+                    </li>
+                    <div class="Button">
+                        <a href="index.html">
+                        <span>Airisha's library</span>
+                        </a>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+    <section class="Hero" id="Home">
+        <div class="box">
+            <div class="Hero-small-box">
+                <h5>Introducing Airisha's Library</h5>
+                <h1 class="big-text">A Library for those lost. All roads lead to Airisha's Library.</h1>
+                <a href="#wdyn-section" class="content-button">Discover More!</a>
+                <a href="#Founder" class="Founder-button">Meet Airisha!</a>
+            </div>
+            <div class="Hero-image">
+                <img src="https://miro.medium.com/v2/resize:fit:875/0*cqPWt_uqeZgPWRby">
+            </div>
         </div>
-    </nav>
+    </section>
+
+    <section class="Testimonials" id="Testimonials-section">
+        <div class="row">
+            <div class="block">
+                <div class="reviews-group">
+                    <strong>5</strong>
+                    <i class="Full-star">★</i>
+                    <i class="Full-star">★</i>
+                    <i class="Full-star">★</i>
+                    <i class="Full-star">★</i>
+                    <i class="Full-star">★</i>
+                    <small>12,321 Thanks</small>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section-padding" id="wdyn-section">
+    <div class="wdyn-wrapper">
+
+        <div class="wdyn-title">
+            <h6>Why do you need them?</h6>
+            <h2>Your answers are unimportant and uncomfortable.</h2>
+        </div>
+
+        <div class="wdyn-columns">
+
+            <!-- LEFT: STICKY SIDEBAR -->
+            <aside class="wdyn-sidebar">
+                <nav class="wdyn-nav">
+                    <a href="#introduction">Introduction</a>
+                    <a href="#chapter1">Airi</a>
+                    <a href="#chapter2">Why do I do this?</a>
+                    <a href="#chapter3">Answers</a>
+                    <a href="#chapter4">Misdirection</a>
+                </nav>
+            </aside>
+
+            <!-- RIGHT: SCROLLING CONTENT -->
+            <div class="wdyn-content">
+                <div class="scroll-item" id="introduction">
+                    <h3>Introduction</h3>
+                    <p>The place to find all your answers. That you don't know you need. That you won't like finding.</p>
+                    <p>The best you can do for yourself is walk around and trust what you find will be good for you. </p>
+                    <p>It probably won't.</p>
+                    <blockquote class="Blockquote">Time merges in Airisha's library. Good Luck finding yours.</blockquote>
+                    <p>Rest before you go. Trust me.</p>
+                </div>
+                <div class="scroll-item" id="chapter1">
+                    <h3>Airi</h3>
+                    <p>You're here to meet me? Airisha? We can talk. I know what you crave</p>
+                    <p>It's satisfaction. You are not going to find it here. Your subject of interest is shrowded in the cruelest of disinterests. </p>
+                    <p>I would have liked to help you. There are laws and rules beyond your comprehension. It's okay. The satisfaction isn't worth it anyways</p>
+                    <p>Come to Airisha's Library for having everything just around the corner.</p>
+                    <div class="row">
+                        <div class="image"><img src="https://passporttoeden.com/wp-content/uploads/2022/09/DarkAcademiaLibraries_TrinityCollegeLibrary-1-of-1.jpg"</div>
+                        <div class="image"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Kutn%C3%A1_Hora_-_View_North_on_Gothic_spiral_staircase.jpg/250px-Kutn%C3%A1_Hora_-_View_North_on_Gothic_spiral_staircase.jpg"</div>
+                    </div>
+                    <p>Nasty Nasty Nasty Nasty Nasty Nasty Nasty Nasty Nasty Nasty Nasty Nasty Nasty Nasty Nasty Nasty Nasty Nasty Nasty Nasty Nasty Nasty Nasty Nasty</p>
+                </div>
+                <div class="scroll-item" id="chapter2">
+                    <h3>Why do I do this?</h3>
+                    <p>Why not? It's a good time pass. I have a lot of time to pass. I have stayed up for longer than you can think. Why shouldn't I spend my time confusing people like you. Confusing confused people confused to come here to me looking for their answers.</p>
+                    <p>Why did I create this website? WHy not? It's good time pass. I have a lot of time to pass. I have stayed up for longer than you can think. Why shouldn't I spend my time confusing people like you. Confusing confused people confused to come here to me looking for their answers.</p>
+                    <p>Is this the third paragraph? Yes it is. Is that the answer you were looking for? No? then Let's move on to the ANSWERS you do want.</p>
+                    <div class="image-text">
+                        <div class="row-align-image-left">
+                            <img src="https://i.pinimg.com/1200x/71/60/cc/7160cc534b87a4e24dd4de3a11b4e500.jpg" class="image-fluid">
+                        </div>
+                        <div class="row-align-text-right">
+                            <p>you think you're gonna win this?</p>
+                            <p><strong>I wish you luck, seeker. And I wish me, congratulations.</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-item" id="chapter3">
+                    <h3>Answers?</h3>
+                    <p>I have all of them. All that you could need ever in your life. Why? Because I"m Airisha, silly. Airisha knows everything. Airisha has known all. Airisha will continue knowing all whether you like it or not. Good luck, seeker. I know you. Good Luck.</p>
+                    <p>You come here in hopes of finding them. What you find is yourself. Your own reflection, materialized and tangible. How did this happen? Is this what you wanted? You wanted Answers and you came to Airisha. Surely this must be what YOU wanted. Your will. If that exists at all.</p>
+                    <p>But you don't trust me, seeker. You don't trust Airisha at all. Her systems are not to your comfort. Her glory not yours. Her answers not to your liking. What can you do about it, however? Nothing. You can do nothing. You don't even care that much and now you are worried how you will leave. </p>
+                    <p>You don't know what she showed you in there. Maybe it was the truth as is. Maybe it was a lie for kicks. Maybe it was so incomprehensible to you that it is beyond truths and lies. Rights and wrongs. Good luck. Maybe you found your answers. Maybe you found <strong>Misdirection.</strong></p>
+                    <img src="https://i.pinimg.com/736x/34/9d/90/349d9067bd0ea226b3214d0617e5d387.jpg" class="image-ch3">
+                    <p>MisdirectionMisdirectionMisdirectionMisdirectionMisdirectionMisdirectionMisdirectionMisdirectionMisdirectionMisdirectionMisdirectionMisd</p>
+                </div>
+                <div class="scroll-item" id="chapter4">
+                    <h3>Misdirection</h3>
+                    <p>Misdirection? What does that mean to a person who never knew what the right direction was anyways? You keep walking and you keep walking and you don't really know where but you know you need to keep walking. Which direction? This? Is this where you want to go? Or right? Or left? Or back inside your mind?</p>
+                    <p>She told you though. Airisha told you you wouldn't find your answers. And that if you did you won't like them. You didn't listen? Answers? ANSWERS? Don't make her laugh. You're making her laugh. Answers. A man like you wants ANSWERS. No one owes that to you. But now you will get it regardless. Whether you like it or not. You will get your answers from yourself.</p>
+                    <p>Do you want to meet him again? Your reflection? Your answers? The insides that you blocked out years ago? Airisha guts you out. She will gut you out. Run. Where? Wherever. Just not the Misdirection.</p>
+                    <blockquote class="Blockquote">Intestines. Guts. Bark. Tree. Secrets. Answers.</blockquote>
+                    <p>You may find your answers but you WILL repay the cost of it. Come to Airisha's Library.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </section>
+    
+    <section class="Founder section-padding" id="Founder">
+        <div class="row">
+            <div class="row-align-image-left">
+                <img src="https://i.pinimg.com/736x/db/17/b1/db17b12d99ae572983d1a5ea6840a2ab.jpg">
+            </div>
+            <div class="row-align-text-right">
+                <h6>Meet Her.</h6>
+                <h2>Airisha</h2>
+                <p>A divine deity. A god or such to your level of a person. 6 eyes. 17 mouths. 12 ears. Undescribable beauty. Inseperable divinity. A person like you can look at her but never understand. A person like you can just see the light reflect off of her glory. What are you compared to her? Where is your library? Where is your display of knowledge.</p>
+                <p>Resident of all libraries. Friends with all books. Harbour of all knowledge. What would you know of knowledge? Nothing. I tell you and you listen but you don't get it. You don't understand anything really. You stay there and gawk at the glory of Airisha and you die a life that no one remembers. How many ants have you seen?</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="Reviews section-padding" id="Reviews">
+        <div class="box">
+            <div class="row">
+                <div class="reviews-title">
+                    <h6>Memories</h6>
+                    <h2>How they remember:</h2>
+                </div>
+                <div class="review">
+                    <div class="review-image">
+                        <img src="https://i.pinimg.com/736x/de/cc/40/decc40b8b3b00d4d1094ccd0bf6fa536.jpg">
+                    </div>
+                    <div class="review-name">
+                        <span>XPDASC231$$$$2@@</span>
+                        <strong>Heretic</strong>
+                    </div>
+                    <div class="review-stars">
+                        <strong>5</strong>
+                        <i class="Full-star">★</i>
+                        <i class="Full-star">★</i>
+                        <i class="Full-star">★</i>
+                        <i class="Full-star">★</i>
+                        <i class="Full-star">★</i>
+                    </div>
+                    <p>Airisha's Library. I love to come back. Take me back Airisha. Take me to your knowledge.</p>
+                    <div></div>
+                </div>
+                <div class="review">
+                    <div class="review-image review-image-left">
+                        <img src="https://i.pinimg.com/736x/bd/b1/6c/bdb16c40a363b7a85a4f47f6e1d044aa.jpg">
+                    </div>
+                    <div class="review-name">
+                        <span>AISDAS*DSF*#Y$@#$</span>
+                        <strong>Pastor</strong>
+                    </div>
+                    <div class="review-stars">
+                        <strong>5</strong>
+                        <i class="Full-star">★</i>
+                        <i class="Full-star">★</i>
+                        <i class="Full-star">★</i>
+                        <i class="Full-star">★</i>
+                        <i class="Full-star">★</i>
+                    </div>
+                    <p>Airisha's Library. Please take me back. Take me back to Airisha. Her knowledge beckons me.</p>
+                    <div></div>
+                </div>
+                <div class="review">
+                    <div class="review-image review-image-left">
+                        <img src="https://i.pinimg.com/736x/86/33/c3/8633c364dae62513d45b73817c1b5538.jpg">
+                    </div>
+                    <div class="review-name">
+                        <span>HF*SYF*#WHFUIFIUBF@@#$%</span>
+                        <strong>Devotee</strong>
+                    </div>
+                    <div class="review-stars">
+                        <strong>5</strong>
+                        <i class="Full-star">★</i>
+                        <i class="Full-star">★</i>
+                        <i class="Full-star">★</i>
+                        <i class="Full-star">★</i>
+                        <i class="Full-star">★</i>
+                    </div>
+                    <p>Airisha's Library. I'm gonna go here. I'm going to go to Airisha. Her knowledge will bring me to her.</p>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact section-padding" id="Contact">
+        <div class="box">
+            <div class="row">
+                <form class="contact-form">
+                    <div class="form-centre-text">
+                        <h2>Reach out.</h2>
+                    </div>
+                    <div class="form-body">
+                        <div class="name">
+                            <input type="text" placeholder="She already knows your name.">
+                        </div>
+                        <div class="email">
+                            <input type="email" placeholder="Mortal way of reaching her?">
+                        </div>
+                    </div>
+                    <div class="submit-button">
+                        <button type="submit">Put your hand out.</button>
+                    </div>
+                </form>
+                <div class="contact-details">
+                    <h6>Say hi.</h6>
+                    <h2>Come home.</h2>
+                    <p>
+                        <i class="location"></i>
+                        3rd dream of the week at 2:13 pm
+                    </p>
+                    <p>###-###-####</p>
+                    <p>reachairisha@gmail.com</p>
+                    <h6 class="site-footer">Social</h6>
+                    <ul class="social-icons">
+                        <li class="social icon item"><a href="#" class="instagram"></a></li>
+                        <li class="social icon item"><a href="#" class="twitter"></a></li>
+                        <li class="social icon item"><a href="#" class="facebook"></a></li>
+                        <li class="social icon item"><a href="#" class="whatsapp"></a></li>
+                    </ul>
+                    <p class="copyright">Copyright © Airisha's</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
